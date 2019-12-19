@@ -13,6 +13,6 @@ output "key_name"  {
 value = aws_key_pair.deployer.key_name
 }
 
-output "IPs" {
-  value = "aws_instance.web.*.public.ip"
+output "IPs3" {
+  value = aws_instance.web.*.public.ip
 }
