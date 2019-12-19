@@ -14,5 +14,5 @@ value = aws_key_pair.deployer.key_name
 }
 
 output "IPs3" {
-  value = aws_instance.web.*.public.ip
+  value = aws_instance.web.*.public_ip
 }
