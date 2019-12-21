@@ -10,3 +10,9 @@ tags = {
     Name = "HelloWorld${count.index +1}" 
   } 
 } 
+  resource "aws_instace" "imported" {
+  ami           = "ami-00068cd7555f543d5" 
+  key_name = aws_key_pair.deployer.key_name
+  security_groups = ["allow_ssh"]
+
+}
