@@ -20,9 +20,8 @@ resource "aws_instance" "web" {
         ]
       }
   provisioner "local-exec" {
-    command = "echo ${aws_instance.web.public_ip} >> public_ips.txt"
-    command = "wget -O /tmp  https://wordpress.org/latest.zip"
-    command  = "mkdir /tmp/test"
+    command = "echo "hello" >> public_ips.txt"
+    
   }
   lifecycle{
     prevent_destroy = false
