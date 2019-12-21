@@ -20,7 +20,7 @@ resource "aws_instance" "web" {
         ]
       }
   provisioner "local-exec" {
-    command = "echo "hello" >> public_ips.txt"
+    command = "echo hello >> public_ips.txt"
     
   }
   lifecycle{
