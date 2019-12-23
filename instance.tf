@@ -1,5 +1,5 @@
 resource "aws_instance" "web" {
-  count = var.count_instance
+  count           = var.count_instance
   ami             = var.ami
   instance_type   = var.instance_type
   associate_public_ip_address = var.associate_public_ip_address
@@ -11,7 +11,7 @@ resource "aws_instance" "web" {
       type        = "ssh"
       user        = var.user
       private_key = file(var.ssh_key_location)
-      }
+    }
       inline = [
         "sudo yum install -y epel-release",
         "sudo yum install httpd -y ",
@@ -23,7 +23,6 @@ resource "aws_instance" "web" {
         "sudo rsync -avP ~/wordpress/ /var/www/html/",
         "sudo chown -R apache /var/www/html/wordpress"
         ]
-  
   }
   lifecycle{
     prevent_destroy = false
