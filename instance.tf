@@ -29,7 +29,7 @@ resource "aws_instance" "web" {
     prevent_destroy = false
   }
   tags = {
-    Name = "HelloWorld${count.index +1}"
+    Name = "HelloWorld"
   }
 }
 
