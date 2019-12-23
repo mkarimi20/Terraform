@@ -1,4 +1,4 @@
-ami                            = "mi-4bf3d731" 
+ami                            = "ami-4bf3d731" 
 instance_type                  = "t2.micro" 
 count_instance                 = 1
 associate_public_ip_address     = "true"
