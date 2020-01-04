@@ -74,5 +74,5 @@ key = "${S3BUCKETPROJ}/${S3BUCKETREGION}/${S3BUCKETTYPE}/${ENVIRONMENT}/${S3TFST
 region = "${S3BUCKETREGION}" 
   }
 }
-EOF 
-cat backend.tf 
+EOF
+cat backend.tf
