@@ -12,7 +12,7 @@ owners = ["679593333241"]
 }
 
 #added spaces to correct
-output "ami" { 
+output "centos" { 
 value = data.aws_ami.centos.id
 }
 
