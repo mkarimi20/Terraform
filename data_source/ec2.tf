@@ -1,12 +1,13 @@
-provider "aws" { 
-  region = "us-east-2" 
-} 
+provider "aws" {
+region = "us-east-2" 
+}
 
 data "aws_ami" "ubuntu" { 
-  most_recent = true 
-  owners = ["099720109477"] 
+most_recent = true 
+owners = ["099720109477"]
 }
- 
+
+#added spaces to correct
 output "ami" { 
-  value = "${data.aws_ami.ubuntu.id}" 
-} 
+value = "${data.aws_ami.ubuntu.id}"
+}
