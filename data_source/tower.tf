@@ -34,7 +34,7 @@ provisioner "remote-exec" {
         private_key = file("~/.ssh/id_rsa")
         }
     inline = [
-        "sudo yum install -y epel-release",
+        "sudo yum install -y epel-release"
         ]
     }
 
