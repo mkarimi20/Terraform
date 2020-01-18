@@ -1,13 +1,21 @@
-variable "name" {
-    default = "wordpress1"
-}
-variable "cider" {}
-variable "azs1" {}
-variable "azs2" {}
-variable "azs3" {}
-variable "priv-subnet1" {}
-variable "priv-subnet2" {}
-variable "priv-subnet3" {}
+
+variable "region" {}
+
+variable "name" {}
+
+variable "cidr" {}
+
+variable "az" {}
+
+variable "pub-cidr" {}
+
+variable "priv-cidr" {}
+
+variable "enable_nat_gateway" {}
+variable "enable_vpn_gateway" {}
+
+variable "environment" {}
+variable "terraform" {}
 
 
 
