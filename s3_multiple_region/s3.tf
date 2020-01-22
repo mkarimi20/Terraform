@@ -1,4 +1,4 @@
-resource "aws_s3_bucket" "b" { 
+resource "aws_s3_bucket" "a" { 
   bucket = "my-tf-test-bucket-karimi" 
   acl    = "private"
   region = "us-east-1"
@@ -27,7 +27,7 @@ resource "aws_s3_bucket" "b" {
   } 
 }
 
-resource "aws_s3_bucket" "b" { 
+resource "aws_s3_bucket" "c" { 
   bucket = "my-tf-test-bucket-karimi" 
   acl    = "private"
   region = "us-west-1"
@@ -42,7 +42,7 @@ resource "aws_s3_bucket" "b" {
   } 
 }
 
-resource "aws_s3_bucket" "b" { 
+resource "aws_s3_bucket" "d" { 
   bucket = "my-tf-test-bucket-karimi" 
   acl    = "private"
   region = "eu-west-1"
